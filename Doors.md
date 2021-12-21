@@ -1,5 +1,34 @@
 # Doors
 
+A door is defined by a `Door` component, which contains:
+
+- The door's state, `CLOSED` or `OPEN`
+- The door's terrain type when closed, `closedTerrain`
+- The door's sprites by name, `closedSprite` and `openSprite`
+- TODO: For locked doors, the name of a `condition` variable that indicates whether it is locked or unlocked.
+
+A data-drive `Region`, as read from disk, can create basic doors from the region as follows:
+
+- Define two terrain tiles, `open_door` and `closed_door`.  
+	- `closed_door` tiles should have `TerrainType.DOOR`.
+	- `open_door` tiles should have `TerrainType.NONE`.
+- The `Region` will create the relevant `Door` component on load.
+
+The `Planner`/`Executer` are responsible for the opening/closing door logic.
+
+The `Animator` is responsible for setting the door's sprite to match its state.
+
+## Futures
+
+- Allow doors to be added to Tiled maps as "feature" objects.  This would allow:
+	- Configuring the open and closed sprites
+	- Creating locked doors by associating them with a locked condition variable.
+
+- A `Door` can have `TerrainType.DOOR` or `TerrainType.GATE`, depending on whether it's opaque or not.  If a region can commonly have simple doors of both kinds added on the `Features` terrain layer, we might want to add simple "gates"
+	- Region could look for `open_gate` and `closed_gate` terrain tiles on load.
+
+## Ponderings
+
 Doors are tricky.
 
 At base a door is a barrier that blocks passage unless open.  There are several kinds.
@@ -23,15 +52,6 @@ A closed door can be locked.
 Every door can have a different sprite in each state, and needs to know what the sprites are so that it can switch them when opened/closed.  (I can't assume that there are only two door sprites.)
 
 A locked door is associated with a [[Condition Variable]].  If "locked", the door is locked; if "unlocked", the door is unlocked.
-
-## Sprite Handling
-
-There are two possibilities: 
-
-- An entity can determine its `imageInfo()` on request, based on its state.
-	- I.e., it can just return its `Sprite` component, or compute a `Door` component's sprite base on its state.
-- The game rules can change the `Sprite` component when the door is opened or closed.  The `Door` needs to know what they are.
-	- This is, oddly, probably simpler.
 
 ## User Actions
 
