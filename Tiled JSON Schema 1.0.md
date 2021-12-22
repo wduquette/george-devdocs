@@ -1,5 +1,5 @@
 # Tiled JSON Schema 1.0
-#spec
+#doc, #spec
 
 This is the schema as used by Old George.  Where a field's value is described as "Always {value}", that means that it will never have any other value _in our use case._  For example, we only use orthogonal maps.
 

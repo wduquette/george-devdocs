@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "0d825b141e76b8b0",
+        "id": "d8df2a3e8ea5b2e5",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2021-12-21.md",
+            "file": "README.md.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/2021-12-21.md",
+                "file": "README.md.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "daily/2021-12-21.md",
+                "file": "README.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/2021-12-21.md"
+                "file": "README.md.md"
               }
             }
           }
@@ -119,17 +119,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0d825b141e76b8b0",
+  "active": "d8df2a3e8ea5b2e5",
   "lastOpenFiles": [
-    "daily/2021-12-21.md",
-    "To Do.md",
-    "daily/2021-12-20.md",
-    "Doors.md",
     "README.md.md",
-    "Home.md",
-    "daily/2021-12-19.md",
-    "daily/2021-12-18.md",
-    "Tiled Map Editor.md",
-    "Tiled JSON Schema 1.6.md"
+    "Design Questions.md",
+    "Entity Table.md",
+    "CellMap.md",
+    "VisualEffect.md",
+    "Mobile.md",
+    "Entity Types.md",
+    "Component Types.md",
+    "Cell.md",
+    "Animation.md"
   ]
 }

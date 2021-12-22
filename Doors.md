@@ -1,4 +1,7 @@
 # Doors
+#design 
+
+See also: [[Door Entity]]
 
 A door is defined by a `Door` component, which contains:
 
@@ -15,8 +18,6 @@ A data-drive `Region`, as read from disk, can create basic doors from the region
 - The `Region` will create the relevant `Door` component on load.
 
 The `Planner`/`Executer` are responsible for the opening/closing door logic.
-
-The `Animator` is responsible for setting the door's sprite to match its state.
 
 ## Futures
 

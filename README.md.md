@@ -7,8 +7,11 @@ It is in a separate repository because development notes span branches.  These a
 - [[To Do]]: Next steps
 - [[Design Questions]]: Things I'm still pondering.
 
-## Designs
+## Documentation
 
-- [[Tiled Map Editor]]: On using the output of the [Tiled Map Editor](https://mapeditor.org).
-- [[Region Maps]]: How region maps are defined in New George.
+- [[Tiled Map Data]]
+	- [[Tiled JSON Schema 1.6]]
+- [[Region]]
+- [[Entity]]
+- [[Systems]]
 

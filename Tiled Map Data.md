@@ -1,5 +1,5 @@
 # Tiled Map Editor
-#design,
+#doc
 
 Tiled is a tile map editor available from www.mapeditor.org.  I used it in 
 the original version of George's Saga; it remains a very popular editor.  It 
@@ -25,12 +25,14 @@ These pages describe the schemas for Tiled's JSON map export.
 
 Tiled can load multiple tile sets; it assigns a unique _GID_ to each tile, starting at 1 for the first tile and incrementing from there.  Each tile set in the JSON has a `firstgid` that's the starting index for that tile set.  GID = 0 indicates the empty tile.
 
+Tiled 1.6+ has much more flexibility with regard to tile sets than Tiled 1.0 had; I haven't yet explored the possibilities.
+
 **Layers**: Most data in a Tiled map is on one _layer_ or another.  Tiled supports two kinds of layers:
 
 - Tile layers, containing a vector of GIDs representing tiles in the map grid.  Empty cells are indicated by 0.
-- Object groups, containing "object metadata" associated with rectangles.  The rectangle coordinates are in X/Y pixels.   
+- Object groups, containing "object metadata" associated with areas on the map.  Tiled 1.0 supported only rectangular tiles; Tiled 1.6 supports other possibilities as well.  The coordinates are in X/Y pixels.   Every object has a name, a type, and any number of optional name/value properties.
 
-George uses tile layers to set the basic appearance of the map, and object groups to add metadata that the region's code can use to position mobiles, signs, and triggers.
+George uses tile layers to set the basic appearance of the map, and object groups to add metadata that the region's code can use to position signs, etc.
 
 ## Accessing Tiled Map Data
 

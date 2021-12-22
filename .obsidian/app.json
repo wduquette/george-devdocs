@@ -1,4 +1,5 @@
 {
   "alwaysUpdateLinks": true,
-  "fileSortOrder": "byModifiedTime"
+  "fileSortOrder": "byModifiedTime",
+  "promptDelete": false
 }

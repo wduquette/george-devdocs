@@ -1,10 +1,8 @@
 # Sprite
-#component 
+#term 
 
-A `Sprite` has an image and a (x,y) pixel offset to the entity's cell location.  It controls how an entity is rendered by the rendering system.
+An image of the map's tile size for drawing on the map.
 
-## Open Questions
-
-It might sometimes be convenient to have a sprite with absolute rather than cell-relative pixel coordinates, e.g., for [[VisualEffect]] entities.
+All sprite images are saved in the global Sprites.ALL table; any [[Entity]] with a sprite refers to it by name, via its `Sprite` component.
 
 _Created on 2021-12-05._
