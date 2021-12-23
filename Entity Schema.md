@@ -6,16 +6,17 @@ This table shows the kinds of entity, with the components and subtypes.
 
 Entity Type  | Components
 ------------ | ----------
+Exit         | +Loc
 Feature      | +Label +Loc +Sprite ?Terrain
 ^ Sign       |  
 ^ Door       | 
 ^ Mannikin   | 
+Item         | +Label +Loc +Sprite ?Inventory ?Equipment
+LogMessage   |
 Mobile       | +Label +Loc +Sprite ?Plan
 ^ Player     |
-Item         | +Label +Loc +Sprite ?Inventory ?Equipment
-VisualEffect | ?Loc ?Sprite
 Point        | +Loc
-Exit         | +Loc
+VisualEffect | ?Loc ?Sprite
 
 - `^`:  subtype,  `+`: always, `?`: maybe
 
@@ -30,13 +31,14 @@ Equipment      | slot
 Exit           | regionName pointName
 Feature        | 
 Inventory      | ownerId
-Item           | (key?)
+Item           | key
 Label          | label
 Loc            | cell rowOffset colOffset
+LogMessage     | lastTick message
 Mannikin       | key
-Mobile         | (???)
+Mobile         | key
 Plan           | steps
-Player         | ~~label~~ (key?)
+Player         | 
 Point          | name
 Sign           | key
 Sprite         | name

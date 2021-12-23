@@ -8,7 +8,11 @@ Current Branch: **master**
 - [x] Add `App.println()`, and make it redirect to the Debugger when the debugger is open.
 - [x] Make entity IDs global
 - [x] Simplify entity transfer
-- [ ] Provide better Mannikin names.
+- [x] Replace `.strings` tables with `.keydata` tables
+- [x] Provide better Mannikin names.
+- [x] Add `Label` component
+- [x] Implement movement limits (the player can only move so far)
+- [x] Implement user interactions (open/close doors, read signs, talk to mannikins) using a right-click.
 - [ ] Implement Items and Chests
 - Things to Ponder
 	- [ ] Consider managing mannikin strings that they don't repeat until all have been seen.
@@ -17,9 +21,7 @@ Current Branch: **master**
 	- [ ] Consider merging strings into a global table.
 - Debugger
 	- [ ] Conditions tab with live list of condition variables, + control.
-- [ ] Define user interaction for closing doors.
 - [ ] Implement Floobham NPCs
-- [ ] Implement movement limits (the player can only move so far)
 - [ ] Implement Mover list
 	- Probably a `Mover` sealed type.  
 	- `Mover.Leader(playerId)`
