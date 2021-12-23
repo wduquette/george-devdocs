@@ -5,13 +5,17 @@ My current To Do list.
 Current Branch: **master**
 
 - [x] Implement Floobham "mannikins"
-- [ ] Consider managing mannikins strings that they don't repeat until all have been seen.
-- [ ] Define a basic NPC dialog mechanism, and revise mannikins to use it.
-- [ ] Consider merging strings into a global table.
-- [ ] Implement control bar in GameView
-	- [ ] And implement the inspection tool.
-	- [ ] Add a normal movement button.
-- [ ] Implement debugger
+- [x] Add `App.println()`, and make it redirect to the Debugger when the debugger is open.
+- [x] Make entity IDs global
+- [x] Simplify entity transfer
+- [ ] Provide better Mannikin names.
+- [ ] Implement Items and Chests
+- Things to Ponder
+	- [ ] Consider managing mannikin strings that they don't repeat until all have been seen.
+	- [ ] Consider generalizing signs and mannikins to be one kind of thing.
+	- [ ] Consider defining a basic NPC dialog mechanism, and revising mannikins to use it.
+	- [ ] Consider merging strings into a global table.
+- Debugger
 	- [ ] Conditions tab with live list of condition variables, + control.
 - [ ] Define user interaction for closing doors.
 - [ ] Implement Floobham NPCs

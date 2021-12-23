@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md.md",
+            "file": "daily/2021-12-23.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md.md",
+                "file": "daily/2021-12-23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md.md",
+                "file": "daily/2021-12-23.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md.md"
+                "file": "daily/2021-12-23.md"
               }
             }
           }
@@ -121,15 +121,15 @@
   },
   "active": "d8df2a3e8ea5b2e5",
   "lastOpenFiles": [
+    "daily/2021-12-23.md",
+    "Entity Schema.md",
     "README.md.md",
+    "Entity.md",
+    "Mobile Behavior Modeling.md",
+    "daily/2021-12-22.md",
+    "To Do.md",
+    "Displaying Log Messages.md",
     "Design Questions.md",
-    "Entity Table.md",
-    "CellMap.md",
-    "VisualEffect.md",
-    "Mobile.md",
-    "Entity Types.md",
-    "Component Types.md",
-    "Cell.md",
-    "Animation.md"
+    "Entity Table.md"
   ]
 }

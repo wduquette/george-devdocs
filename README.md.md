@@ -12,6 +12,7 @@ It is in a separate repository because development notes span branches.  These a
 - [[Tiled Map Data]]
 	- [[Tiled JSON Schema 1.6]]
 - [[Region]]
+- [[Entity Schema]]
 - [[Entity]]
 - [[Systems]]
 
